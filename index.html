@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Generator</title>
+    <style media="screen">
+      button{
+        font-size: 16px;
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50;
+      }
+      body {
+font-style:Helvicta,sans-serif;
+text-allign:center;
+justify-content:center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Generator</h1>
+    <p class="text"></p>
+    <button id="btn">Generate</button>
+<br><br><br>
+  <button id=button1>Starwars!!</button>
+    <script type="text/javascript">
+        var likes = ['ducks','puffins','penguins','turtles'];
+        var likes2 = ['sprite','cake','coding','trains','🚀'];
+        var hates = ['I hate ','I like '];
+        var star = ['A Phantom Menace (1999)','Attack of the Clones (2002)','Revenge of the Sith (2005)',' Solo(2018)','Rogue One (2018)','A new Hope (1977)'];
+        document.querySelector('#btn').addEventListener('click',()=>{
+          document.querySelector('.text').innerText=
+          hates[Math.floor(Math.random()*hates.length)]+
+          likes[Math.floor(Math.random()*likes.length)]+
+          ' and '+
+          likes2[Math.floor(Math.random()*likes2.length)]+'.';});
+
+          document.querySelector('#button1').addEventListener('click',()=>{
+            document.querySelector('.text').innerText=
+            star[Math.floor(Math.random()*star.length)];
+        });
+
+
+
+
+
+    </script>
+  </body>
+</html>
