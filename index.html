@@ -20,7 +20,7 @@ justify-content:center;
   <body>
     <h1>Generator</h1>
     <p class="text"></p>
-    <button id="btn">Generate</button>
+    <button id="btn">Animals!!</button>
 <br><br><br>
   <button id=button1>Starwars!!</button>
     <script type="text/javascript">
@@ -28,16 +28,12 @@ justify-content:center;
         var star = ['A Phantom Menace (1999)','Attack of the Clones (2002)','Revenge of the Sith (2005)',' Solo(2018)','Rogue One (2018)','A new Hope (1977)'];
         document.querySelector('#btn').addEventListener('click',()=>{
           document.querySelector('.text').innerText=
-          likes[Math.floor(Math.random()*likes.length)]+
-           document.querySelector('#button1').addEventListener('click',()=>{
-            document.querySelector('.text').innerText=
-            star[Math.floor(Math.random()*star.length)];
+          likes[Math.floor(Math.random()*likes.length)]
         });
-
-
-
-
-
+        document.querySelector('#button1').addEventListener('click',()=>{
+         document.querySelector('.text').innerText=
+         star[Math.floor(Math.random()*star.length)];
+       });
     </script>
   </body>
 </html>
